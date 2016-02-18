@@ -1,26 +1,13 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/*CSS Reset*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, section, video {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
+    /*Overrides default letter spacing between divs*/
+    letter-spacing: -4px;
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -29,82 +16,117 @@ footer, header, menu, nav, section {
     display: block;
 }
 body {
-    line-height: 1;
+    line-height: 0;
 }
 ol, ul {
     list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
 }
 
 /*End CSS Reset*/
 
 /*Begin gustom CSS*/
+
+/*Wrappers*/
 body {
     background-color: rgb(240, 240, 240);
 }
 
 main {
     height: 800px;
-    width: 1280px;
+    width: 1270px;
     margin: auto;
     background-color: rgb(49, 49, 49);
-}
-
-.shadow {
-    box-shadow: 3px 3px 5px black;
 }
 
 .wrapper {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 1240px;
+    width: 1230px;
     height: 760px;
     margin: 20px;
-    border: 1px solid white;
 }
 
 .big {
-    width: 33.33%;
+    width: 410px;
     height: 760px;
-    border: 1px solid white;
 }
 
-div {
+.cont-1 {
+    float: left;
+    margin-right: 9px;
+    width: 95px;
+}
+
+.cont-2 {
     display: inline-block;
-    margin: 0 2px 0 0;
+    width: 152px;
+    vertical-align: top;
+}
+
+/*Shapes*/
+div {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 9px 9px 0;
+    box-shadow: 4px 4px 4px rgb(25,25,25);
+    background-color: rgb(240,240,240);
 }
 
 .rect1 {
-    height: 67px;
-    width: 36%;
-    background-color: rgb(240,240,240);
+    height: 68px;
+    width: 144px;
 }
 
 .rect2 {
-    height: 67px;
-    width: 62%;
-    background-color: rgb(240,240,240);
+    height: 68px;
+    width: 248px;
+}
+
+.rect3 {
+    height: 144px;
+    width: 100%;
+}
+
+.rect4 {
+    height: 221.5px;
+    width: 100%;
+}
+
+.rect5 {
+    height: 144px;
+    width: 67px;
+}
+
+.bigsquare {
+    height: 297px;
+    width: 297px;
+    background-color: rgb(245,15,15);
+}
+
+.littlesquare {
+    height: 145px;
+    width: 144px;
+}
+
+/*Coloring*/
+.yellow {
+    background-color: rgb(250, 227, 23);
+}
+
+.black {
+    background-color: rgb(0,0,0);
+}
+
+/*Positioning*/
+.top {
+    vertical-align: top;
 }
 
 
-
-
-
-
-
-
+.vert {
+    transform: rotate(90deg);
+}
 
 
 
