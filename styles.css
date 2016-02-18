@@ -26,7 +26,7 @@ ol, ul {
 
 /*Begin gustom CSS*/
 
-/*Wrappers*/
+/*Wrappers--no shapes*/
 body {
     background-color: rgb(240, 240, 240);
 }
@@ -59,6 +59,12 @@ main {
 }
 
 .cont-2 {
+    display: inline-block;
+    width: 152px;
+    vertical-align: top;
+}
+
+.cont-3 {
     display: inline-block;
     width: 152px;
     vertical-align: top;
